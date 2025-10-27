@@ -1,0 +1,48 @@
+{
+  "name": "@flutterde/file-scanner",
+  "version": "1.0.0",
+  "description": "A npm package that scan files and check if contains scripts or malwares",
+  "keywords": [
+    "node",
+    "file",
+    "scan",
+    "security",
+    "malware"
+  ],
+  "homepage": "https://github.com/flutterde/file-scanner#readme",
+  "bugs": {
+    "url": "https://github.com/flutterde/file-scanner/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flutterde/file-scanner.git"
+  },
+  "license": "ISC",
+  "author": "otman",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "file-type": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.2"
+  }
+}
