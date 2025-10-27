@@ -348,21 +348,6 @@ For issues and feature requests, please use the [GitHub issue tracker](https://g
 npm install file-scanner
 ```
 
-## Usage
-
-```typescript
-import { scanFile } from 'file-scanner';
-
-const result = await scanFile('/path/to/file');
-console.log(result);
-```
-
-## API
-
-### `scanFile(filePath: string): Promise<ScanResult>`
-
-Scans a file for potential malicious content.
-
 **Parameters:**
 - `filePath` - Path to the file to scan
 
