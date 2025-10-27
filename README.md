@@ -345,7 +345,7 @@ For issues and feature requests, please use the [GitHub issue tracker](https://g
 ## Installation
 
 ```bash
-npm install file-scanner
+npm install @flutterde/file-scanner
 ```
 
 **Parameters:**
