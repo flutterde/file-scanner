@@ -102,7 +102,7 @@ A comprehensive npm package for scanning files and detecting potential security 
 ## Installation
 
 ```bash
-npm install file-scanner
+npm install @flutterde/file-scanner
 ```
 
 ## Usage
@@ -110,7 +110,7 @@ npm install file-scanner
 ### Basic Example
 
 ```typescript
-import { scanFile } from 'file-scanner';
+import { scanFile } from '@flutterde/file-scanner';
 import { readFileSync } from 'fs';
 
 // Read file as buffer
@@ -131,7 +131,7 @@ if (!result.isClean) {
 ### Advanced Usage with Options
 
 ```typescript
-import { scanFile, ScanOptions } from 'file-scanner';
+import { scanFile, ScanOptions } from '@flutterde/file-scanner';
 import { readFileSync } from 'fs';
 
 const buffer = readFileSync('/path/to/file.zip');
@@ -156,7 +156,7 @@ console.log('Compression Ratio:', result.metadata?.compressionRatio);
 ### Handling Results
 
 ```typescript
-import { scanFile, ThreatType, FileCategory } from 'file-scanner';
+import { scanFile, ThreatType, FileCategory } from '@flutterde/file-scanner';
 import { readFileSync } from 'fs';
 
 const buffer = readFileSync('/path/to/document.pdf');
