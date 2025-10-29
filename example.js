@@ -40,7 +40,7 @@ function expressExample() {
 // With multer for file uploads
 import multer from 'multer';
 import express from 'express';
-import { scanFile } from 'file-scanner';
+import { scanFile } from '@flutterde/file-scanner';
 
 const upload = multer({ storage: multer.memoryStorage() });
 const app = express();

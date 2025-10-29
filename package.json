@@ -1,6 +1,6 @@
 {
   "name": "@flutterde/file-scanner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A npm package that scan files and check if contains scripts or malwares",
   "keywords": [
     "node",
